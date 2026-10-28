@@ -9,9 +9,9 @@
 | [`discussion`](skills/discussion/SKILL.md) | 平等讨论：把你的观点当待检验主张，独立查证后再给判断 | 你提出待推敲的想法、方案，或想评估自己的判断 | — |
 | [`second-opinion`](skills/second-opinion/SKILL.md) | 独立复核：开一个独立子会话，带着原始需求与证据重新查证当前结论 | 结论要落地但想先验一遍；手动调用（`disable-model-invocation`） | — |
 | [`clear-reply`](skills/clear-reply/SKILL.md) | 清楚回复：先答主问题，把行动说具体，措辞不超出证据 | 解释问题、说明步骤、比较方案、汇报结果，或你说“说清楚”“没看懂” | — |
-| [`clear-prose-zh`](skills/clear-prose-zh/SKILL.md) | 清晰连贯的中文写作：保原意与置信度的前提下改写中文技术说明 | 润色 README、设计说明、PR 描述、状态汇报；文本“读起来不通顺”“短句太碎” | [`examples/before-after.md`](skills/clear-prose-zh/examples/before-after.md) |
+| [`clear-prose-zh`](skills/clear-prose-zh/SKILL.md) | 中文润色：改善行文连贯性、补全过度省略的表达、把黑话与抽象比喻换成通用用语，不改原意与置信度 | 润色 README、设计说明、PR 描述、状态汇报；文本“读起来不通顺”“省略太多读不懂”“黑话太多” | [14 个前后对照样例](skills/clear-prose-zh/examples/before-after.md) |
 
-三者的分工：`clear-reply` 管一次回复的写法，`clear-prose-zh` 管成篇中文文本的连贯，两者只改表达、不改事实。`discussion` 决定要不要接受一个观点，`second-opinion` 决定要不要相信一个已得出的结论——后者会另开独立上下文取证，不认同原作者的解释。`second-opinion` 默认只复核、不修复，且设了 `disable-model-invocation`，需要显式调用。
+四者的分工：`clear-reply` 管一次回复的写法，`clear-prose-zh` 管成篇中文文本的连贯，两者只改表达、不改事实。`discussion` 决定要不要接受一个观点，`second-opinion` 决定要不要相信一个已得出的结论——后者会另开独立上下文取证，不认同原作者的解释。`second-opinion` 默认只复核、不修复，且设了 `disable-model-invocation`，需要显式调用。
 
 ## 安装
 
